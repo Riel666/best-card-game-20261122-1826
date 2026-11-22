@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Ember Court — a card duel</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body {
+    margin: 0; background: #14100a; color: #e8e4d8;
+    font-family: Georgia, 'Times New Roman', serif;
+    display: flex; flex-direction: column; align-items: center;
+    min-height: 100vh;
+  }
+  #wrap { position: relative; width: 1280px; height: 800px; }
+  canvas { display: block; width: 1280px; height: 800px; background: #1e4d2b; }
+  #help { width: 1280px; padding: 8px 4px; font-size: 14px; color: #9aa7bd; font-family: monospace; }
+</style>
+</head>
+<body>
+  <div id="wrap">
+    <canvas id="game" width="1280" height="800"></canvas>
+  </div>
+  <div id="help">Click a card to play it · click a creature, then a target, to attack · Ember Burst needs a target · Space ends your turn · R play again · M sound</div>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
